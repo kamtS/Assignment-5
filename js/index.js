@@ -17,6 +17,13 @@ $(document).ready(function() {
        $('#readLess').hide();
    })
    
+    $('.learnmore').click(function(e) {
+       e.preventDefault();
+       $('#learnmoretext').slideDown();
+       $('.learnmore').hide();
+       console.log('learn more slide down');
+   });
+   
  /*  $('#readmore').click(function() {
       $('#show-this-on-click').slideDown();
       console.log('reveal this on click');
