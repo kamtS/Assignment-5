@@ -4,13 +4,22 @@ $(document).ready(function() {
    
    $('#readMore').click(function(e) {
        e.preventDefault();
-       
+       $('#show-this-on-click').slideDown();
+       $('#readLess').show();
+       $('#readMore').hide();
        console.log('stop page jump');
    });
    
-   $('#show-this-on-click').click(function() {
-      
+   $('#readLess').click(function(e) {
+       e.preventDefault();
+       $('#show-this-on-click').slideUp();
+       $('#readMore').show(300);
+       $('#readLess').hide();
+   })
+   
+ /*  $('#readmore').click(function() {
+      $('#show-this-on-click').slideDown();
       console.log('reveal this on click');
    });
-    
+ */    
 });
